@@ -1,3 +1,3 @@
 source ./library-symlinks.sh
 
-symlink_lib 'postgres' 'messaging'
+symlink_lib 'messaging'
