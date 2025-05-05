@@ -1,7 +1,7 @@
-require_relative 'interactive_init'
-require_relative 'controls'
+require_relative "interactive_init"
+require_relative "controls"
 
-logger = Log.get('Consumer')
+logger = Log.get("Consumer")
 
 logger.info "Starting Consumer - Read Indefinitely", tag: :test
 

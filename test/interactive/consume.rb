@@ -1,13 +1,13 @@
-require_relative 'interactive_init'
-require_relative 'controls'
+require_relative "interactive_init"
+require_relative "controls"
 
-logger = Log.get('Consume')
+logger = Log.get("Consume")
 
 logger.level = :debug
 
 logger.info "Starting Consumer", tag: :test
 
-stream_name_file = File.expand_path('stream_name.tmp', File.dirname(__FILE__))
+stream_name_file = File.expand_path("stream_name.tmp", File.dirname(__FILE__))
 stream_name = nil
 begin
   stream_name = File.read(stream_name_file)

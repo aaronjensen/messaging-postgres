@@ -1,8 +1,8 @@
-require_relative '../automated_init'
+require_relative "../automated_init"
 
 context "Write" do
   context "Single Message" do
-    stream_name = Controls::StreamName.example(category: 'testWrongVersion')
+    stream_name = Controls::StreamName.example(category: "testWrongVersion")
 
     message_1 = Controls::Message.example
 

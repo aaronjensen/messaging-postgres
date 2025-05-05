@@ -1,14 +1,14 @@
-require_relative 'interactive_init'
-require_relative 'controls'
+require_relative "interactive_init"
+require_relative "controls"
 
-producer_logger = Log.get('Produce')
+producer_logger = Log.get("Produce")
 producer_logger.level = :info
 producer_logger.info "Starting Producer", tag: :test
 
-stream_name = Controls::StreamName.example(category: 'testInteractive')
+stream_name = Controls::StreamName.example(category: "testInteractive")
 producer_logger.info "Stream name: #{stream_name}", tag: :test
 
-period = ENV['PERIOD']
+period = ENV["PERIOD"]
 period ||= 0
 period_seconds = Rational(period, 1000)
 
@@ -28,7 +28,7 @@ end
 producer_stop_time = Time.now
 
 
-consumer_logger = Log.get('Consume')
+consumer_logger = Log.get("Consume")
 consumer_logger.level = :info
 consumer_logger.info "Starting Consumer", tag: :test
 
